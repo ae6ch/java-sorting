@@ -7,14 +7,19 @@ public class BubbleSort {
       System.out.printf("After: ");
       printArrayInt(arr);
    }
-
+   
    private static void printArrayInt(int[] arr) {
       for (int entry : arr) {
          System.out.printf("%d ", entry);
       }
       System.out.println();
    }
-
+   
+   /**
+    * Sort a array of numbers using bubble sort.
+    *
+    * @param arr array of numbers to sort
+    */
    private static void bubbleSort(int[] arr) {
       boolean swapped = true;
       while (swapped) {
@@ -27,7 +32,14 @@ public class BubbleSort {
          }
       }
    }
-
+   
+ /**
+    * Swap 2 positions in a array.
+    * 
+    * @param arr
+    * @param a   index to swap with b
+    * @param b   index to swap with a
+    */
    private static void swap(int[] arr, int a, int b) {
       int temp = arr[a];
       arr[a] = arr[b];
